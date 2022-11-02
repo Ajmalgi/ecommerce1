@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <table cellpadding="10">
+        <tr>
+   <td> <h3>product 1</h3>
+    <img src="{% static 'images/11.jpg' %}">
+</td>
+<td>
+    <h3>product 2</h3>
+    <img src="{% static 'images/22.jpg' %}">
+</td>
+</tr>
+<tr>
+    <td> <h3>product 3</h3>
+     <img src="{% static 'images/33.jpg' %}">
+ </td>
+ <td>
+     <h3>product 4</h3>
+     <img src="{% static 'images/images.jpg' %}">  
+ </td>
+ 
+ 
+    <th> <a href="{% url 'customer:home' %}"><button type="button">go to home</button></a>
+        <a href="{% url 'common:index' %}"><button type="button">go to menu</button></a></th>
+ </tr>
+</table>
+</body>
+</html>

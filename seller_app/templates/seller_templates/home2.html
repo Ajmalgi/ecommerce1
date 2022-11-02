@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SELLER APP</h1>
+    <a href="{% url 'seller:product' %}"><h2>add product</h2></a>
+    <a href="{% url 'seller:catalogus' %}"><h2>product catalogus</h2></a>
+    <a href="{% url 'seller:orders' %}"><h2>my orders</h2></a>
+    <a href="{% url 'seller:stock' %}"><h2>update stock</h2></a>
+    <a href="{% url 'seller:changepswd' %}"><h2>change password</h2></a>
+    <a href="{% url 'seller:profile' %}"><h2>profile</h2></a>
+    
+    <a href="{% url 'common:index' %}"><button type="button">go to menu</button></a>
+</body>
+</html>

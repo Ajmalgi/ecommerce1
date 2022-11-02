@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>CUSTOMER HOME</h1></center>
+    <a href="{% url 'customer:product' %}"><h2>product details</h2></a>
+    <a href="{% url 'customer:cart' %}"><h2>cart</h2></a>
+    <a href="{% url 'customer:orders' %}"><h2>my orders</h2></a>
+    <a href="{% url 'customer:password' %}"><h2> change password</h2></a>
+    <a href="{% url 'customer:profile' %}"><h2>profile</h2></a>
+    <a href="{% url 'common:index' %}"><button type="button">go to main</button></a>
+    
+</body>
+</html>

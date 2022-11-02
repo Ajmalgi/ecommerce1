@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <table>
+        <tr>
+            <th colspan="2"> <center><img src="{% static 'images/qq.jpg' %}"></center> </th>
+        </tr>
+        <tr>
+            <th>name</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>age</th>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <th>phone</th>
+            <td><input type=" number"></td>
+        </tr>
+    </table><br><br>
+    <a href="{% url 'customer:home' %}"><button type="button">go to home</button></a>
+    <a href="{% url 'common:index' %}"><button type="button">go to menu</button></a>
+</form>
+</body>
+</html>
